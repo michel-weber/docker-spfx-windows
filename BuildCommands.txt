@@ -1,0 +1,9 @@
+docker build -t spfx-windows .
+
+Downloaded python-2.7.11.msi. 
+Saved to C:\Users\ContainerAdministrator\.windows-build-tools\python-2.7.11.msi.
+
+
+docker run -it spfx-windows
+
+docker run -h spfx -it --rm --name test1 -v D:\Dev\Test1:C:\Users\app\spfx -p 5432:5432 -p 4321:4321 -p 35729:35729 spfx-windows
